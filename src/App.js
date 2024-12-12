@@ -5,7 +5,12 @@ import HomePage from "./pages/HomePage";
 import ProfilePage from "./pages/ProfilePage";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+<<<<<<< HEAD
 import { AuthProvider, useAuth } from "./context/AuthContext"; // Ensure useAuth is imported
+=======
+
+import { AuthProvider } from "./context/AuthContext";
+>>>>>>> 24b93a884c3fd4e2bfa91a86ad9ed41bcd6114ac
 import './App.css';
 import { auth } from "./firebase/firebase-config"; // Import auth from firebase-config
 import { onAuthStateChanged } from "firebase/auth"; 
@@ -44,6 +49,7 @@ function App() {
       <Router>
         <div >
           <Routes>
+<<<<<<< HEAD
             {/* Public Route for Login */}
             <Route  path="/" element={isAuthenticated ? <HomePage /> : <Login />} />
             {/* Protected Route for HomePage */}
@@ -68,6 +74,13 @@ function App() {
             
             {/* Public Route for Signup */}
             <Route path="/signup" element={<Signup />} />
+=======
+            <Route  path="" element={<Login />} />
+            <Route  exact path="/" element={<HomePage />} />
+            <Route  exact path="/profile" element={<ProfilePage />} />
+            
+            <Route  exact path="/signup" element={<Signup />} />
+>>>>>>> 24b93a884c3fd4e2bfa91a86ad9ed41bcd6114ac
           </Routes>
         </div>
       </Router>

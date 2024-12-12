@@ -16,10 +16,11 @@ function App() {
         
         <div className="app-container">
           <Routes>
-            <Route  path="/" element={<HomePage />} />
-            <Route  path="/profile" element={<ProfilePage />} />
-            <Route  path="/login" element={<Login />} />
-            <Route  path="/signup" element={<Signup />} />
+            <Route  path="" element={<Login />} />
+            <Route  exact path="/" element={<HomePage />} />
+            <Route  exact path="/profile" element={<ProfilePage />} />
+            
+            <Route  exact path="/signup" element={<Signup />} />
           </Routes>
         </div>
       </Router>

@@ -9,7 +9,6 @@ import Signup from "./components/Signup";
 import { AuthProvider, useAuth } from "./context/AuthContext"; // Ensure useAuth is imported
 
 
-import { AuthProvider } from "./context/AuthContext";
 
 import './App.css';
 import { auth } from "./firebase/firebase-config"; // Import auth from firebase-config

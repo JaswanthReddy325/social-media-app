@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import ProfilePage from "./pages/ProfilePage";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import Navbar from "./components/Navbar";
+
 import { AuthProvider } from "./context/AuthContext";
 import './App.css';
 

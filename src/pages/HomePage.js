@@ -1,4 +1,6 @@
 // src/pages/HomePage.js
+import {Link} from 'react-router-dom'
+
 import React from "react";
 import { useAuth } from "../context/AuthContext";
 import Feed from "../components/Feed";
@@ -8,6 +10,7 @@ const HomePage = () => {
   const { user } = useAuth();
 
   return (
+    <Link to="/">
     <div className="min-h-screen bg-gray-100">
       <Navbar />
       <div className="container mx-auto px-4 py-6">
@@ -23,6 +26,7 @@ const HomePage = () => {
         )}
       </div>
     </div>
+    </Link>
   );
 };
 

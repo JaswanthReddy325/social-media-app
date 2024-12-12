@@ -1,4 +1,6 @@
 // src/pages/ProfilePage.js
+import {Link} from 'react-router-dom'
+
 import React, { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { collection, query, where, getDocs } from "firebase/firestore";
@@ -29,6 +31,7 @@ const ProfilePage = () => {
   }
 
   return (
+    <Link to="/profile">
     <div className="min-h-screen bg-gray-100">
       <div className="container mx-auto px-4 py-6">
         <div className="text-center mb-6">
@@ -54,6 +57,7 @@ const ProfilePage = () => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 

@@ -4,13 +4,16 @@ import { signInWithEmailAndPassword, sendPasswordResetEmail, createUserWithEmail
 import { auth } from "../firebase/firebase-config";  // Import the auth object from firebase.js
 import '../App.css';
 
+
+
+
 const Login = () => {
   const { login } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(""); // State for error messages
   const [isRegistering, setIsRegistering] = useState(false); // Toggle for register/login view
-
+  
   // Handle email login
   const handleEmailLogin = async (e) => {
     e.preventDefault();
